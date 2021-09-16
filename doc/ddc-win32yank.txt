@@ -1,0 +1,56 @@
+*ddc-win32yank.txt*			  win32yank.exe Completion for ddc.vim
+
+Author : Luma <world@luma.email>
+License: MIT <https://github.com/LumaKernel/ddc-win32yank/blob/main/LICENSE>
+
+
+==============================================================================
+CONTENTS					      *ddc-win32yank-contents*
+
+INTRODUCTION					  |ddc-win32yank-introduction|
+INSTALL						       |ddc-win32yank-install|
+EXAMPLES					      |ddc-win32yank-examples|
+PARAMS							|ddc-win32yank-params|
+
+==============================================================================
+INTRODUCTION					  *ddc-win32yank-introduction*
+
+This source collects candidates from win32yank.exe.
+
+==============================================================================
+INSTALL						       *ddc-win32yank-install*
+
+Please install "ddc.vim", "denops.vim" and "win32yank.exe".
+
+https://github.com/Shougo/ddc.vim
+https://github.com/vim-denops/denops.vim
+https://github.com/equalsraf/win32yank
+
+==============================================================================
+EXAMPLES					      *ddc-win32yank-examples*
+>
+	call ddc#custom#patch_global('sources', ['win32yank'])
+	call ddc#custom#patch_global('sourceOptions', {
+	    \ 'win32yank': {
+	    \   'mark': 'CLIP',
+	    \ }})
+<
+
+==============================================================================
+PARAMS							*ddc-win32yank-params*
+
+					      *ddc-win32yank-param-executable*
+executable	(string)
+		Path to win32yank.exe executable.
+
+		Default: "win32yank.exe"
+
+						   *ddc-win32yank-param-regex*
+regex		(string)
+		RegExp for JavaScript to search words. `gu` mode would be
+		used.
+
+		Default: "[-_\\p{L}\\d]+" (Read as JS expression)
+
+==============================================================================
+vim:tw=78:ts=8:noet:ft=help:norl
