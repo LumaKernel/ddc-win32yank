@@ -1,6 +1,6 @@
 # ddc-win32yank
 
-[![Doc](https://img.shields.io/badge/doc-%3Ah%20ddc--registers--words-orange.svg?style=flat-square)](doc/ddc-win32yank.txt)
+[![Doc](https://img.shields.io/badge/doc-%3Ah%20ddc--win32yank-orange.svg?style=flat-square)](doc/ddc-win32yank.txt)
 
 [win32yank.exe](https://github.com/equalsraf/win32yank) Completion for ddc.vim
 
