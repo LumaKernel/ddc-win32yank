@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Moved to https://github.com/LumaKernel/ddc-run.
+
 # ddc-win32yank
 
 [![Doc](https://img.shields.io/badge/doc-%3Ah%20ddc--win32yank-orange.svg?style=flat-square)](doc/ddc-win32yank.txt)
